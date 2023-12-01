@@ -1,20 +1,8 @@
-/*FONTE USADA NO SITE*/
-@import url('https://fonts.googleapis.com/css2? family= Inter:wght@300;400;500;600;700 & display=swap');
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
     outline: none;
     font-family: 'Inter', sans-serif;
 }
-
-/*COR DO FUNDO*/
-body {
-    background-color: #f1f6fc31;
-}
-
 /*FOOTER*/
 section,
 footer {
@@ -50,47 +38,11 @@ p {
 .btn:hover {
     background-color: orangered;
 }
-
-/*DEIXAR A IMAGEM DO FUNDO FIXADA, COBRINDO TUDO E O LUGAR*/
-header {
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-/* menu mobile */
-nav .menu-icon {
-    cursor: pointer;
-    font-size: 25px;
-    color: white;
-    display: none;
-}
-
-nav .close-icon {
-    display: none;
-    font-size: 30px;
-    color: white;
-}
-/*
-BARRINHA EMBAIXO DO HEADER
-nav ul a:not(.btn)::after{
-    content: "";
-    background-color: #4f9cf9;
-    height: 3px;
-    width: 0%;
-    display: block;
-    margin: 0 auto;
-    transition: 0.3s;
-}
-nav ul a:hover::after{
-    width: 100%;
-}
-*/
 .banner {
-    display: flex;
+    display: none;
     justify-content: center;
     align-content: center;
-    background-image: url(img/FUNDOO\ HOME\ \(1\).jpg);
+    background-image: url(../../img/background_bunner.jpg);
     background-repeat: no-repeat;
     width: 100vw;
     background-size: cover;
@@ -295,183 +247,4 @@ nav ul a:hover::after{
 .footer p {
     margin-top: 10px;
     color: white;
-}
-
-@media(max-width: 830px) {
-
-    /* menu mobile */
-    .ul {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: rgb(240, 175, 55);
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        clip-path: circle(0% at 100% 0);
-    }
-
-    .ul.open {
-        clip-path: circle(141.4% at 100% 0);
-        transition: 0.7s;
-    }
-
-    .ul a {
-        margin: 10px 0;
-        font-size: 16px;
-    }
-
-    nav .menu-icon {
-        display: block;
-    }
-
-    nav .close-icon {
-        display: block;
-        position: absolute;
-        top: 46px;
-        right: 28px;
-    }
-}
-
-body {
-    min-height: 100vh;
-    width: 100vw;
-}
-
-header {
-    position: static;
-    display: flex;
-    width: 100vw;
-    height: 10vh;
-    justify-content: space-evenly;
-    align-items: center;
-    background: url(img/header.png);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-#logo {
-    display: flex;
-    height: 95%;
-    text-decoration: none;
-    align-items: center;
-    justify-content: space-around;
-    padding-left: 1rem;
-}
-
-#logo>img {
-    max-height: 80%;
-    margin-right: 2rem;
-}
-
-#logo>h1 {
-    text-wrap: nowrap;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-}
-
-nav {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-inline: 1rem;
-}
-
-.nav-bar {
-    display: flex;
-    list-style: none;
-}
-
-.links-nav {
-    text-wrap: nowrap;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    margin: 0.5rem;
-
-}
-
-#btn-languages {
-    background: transparent;
-    height: 5vh;
-    padding-left: 1rem;
-    border: none;
-}
-
-#btn-languages>img {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-#btn-hamburg {
-    display: none;
-    height: 5rem;
-    width: 5rem;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-}
-
-#btn-hamburg>img {
-    height: 80%;
-}
-
-#languages {
-    position: absolute;
-    top: 10vh;
-    right: 12.5vw;
-    width: 15vw;
-    height: 8vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    background-color: #F28705;
-    list-style: none;
-    font-size: 0.75rem;
-    padding-block: 10px;
-}
-
-#languages>li {
-    width: 100%;
-    height: calc(8vw / 3);
-}
-
-#languages>li>a {
-    width: 100%;
-    justify-content: space-between;
-    text-align-last: center;
-}
-
-@media screen and (max-width: 1080px) {
-    html {
-        font-size: 13px;
-    }
-
-    header {
-        justify-content: space-between;
-    }
-
-    #btn-languages>img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 845px) {
-    html {
-        font-size: 10px;
-    }
-
-    #nav-computer {
-        display: none;
-    }
-
-    #btn-hamburg {
-        display: inline;
-    }
 }
