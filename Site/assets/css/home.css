@@ -1,0 +1,477 @@
+/*FONTE USADA NO SITE*/
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@300;400;500;600;700 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+/*COR DO FUNDO*/
+body {
+    background-color: #f1f6fc31;
+}
+
+/*FOOTER*/
+section,
+footer {
+    padding: 54px 0;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+/*COR DA LETRA*/
+p {
+    color: #0000009c;
+}
+
+/*TAMANHO SITE*/
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn {
+    background-color: orange;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    background-color: orangered;
+}
+
+/*DEIXAR A IMAGEM DO FUNDO FIXADA, COBRINDO TUDO E O LUGAR*/
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* menu mobile */
+nav .menu-icon {
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+
+nav .close-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+/*
+BARRINHA EMBAIXO DO HEADER
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: #4f9cf9;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+*/
+.banner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url(img/FUNDOO\ HOME\ \(1\).jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: cover;
+    background-position: center top;
+    height: 90vh;
+}
+
+.banner .banner-text {
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1 {
+    font-size: 96px;
+    color: white
+}
+
+.banner .banner-text p {
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+}
+
+/* religiosidade */
+.religiosidade .container {
+    display: flex;
+    align-items: center;
+}
+
+.religiosidade .religiosidade-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.religiosidade .religiosidade-text h3 {
+    font-size: 56px;
+}
+
+.religiosidade .religiosidade-text p {
+    margin: 5px 0 10px 0;
+}
+
+.religiosidade .religiosidade-img {
+    width: 50%;
+}
+
+.religiosidade .religiosidade-img img {
+    width: 100%;
+}
+
+.religiosidade a btn animate-btn {
+    align-content: center;
+}
+
+/* infraestrutura */
+.infraestrutura .container {
+    display: flex;
+    align-items: center;
+}
+
+.infraestrutura .infraestrutura-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.infraestrutura .infraestrutura-text h3 {
+    font-size: 56px;
+}
+
+.infraestrutura .infraestrutura-text p {
+    margin: 5px 0 10px 0;
+}
+
+.infraestrutura .infraestrutura-img {
+    width: 50%;
+}
+
+.infraestrutura .infraestrutura-img img {
+    width: 100%;
+}
+
+.infraestrutura a btn animate-btn {
+    align-content: center;
+}
+
+/* festas tradicionais */
+.festas h3 {
+    text-align: center;
+}
+
+.festas p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.festas .card-item {
+    background-color: #e7c27f;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.festas .card-item img {
+    border-radius: 100%;
+    display: block;
+}
+
+.festas .card-item .nome-da-festa {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.festas .card-item .iemanja-text {
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.festas .card-item .oxala-text {
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.festas .card-item .xango-text {
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.festas .card-item .ogum-text {
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.festas .card-item:hover {
+    background-color: orange;
+    margin-top: -5px;
+}
+
+.festas .card-item:hover .nome-da-festa,
+.festas .card-item:hover .iemanja-text,
+.festas .card-item:hover .oxala-text,
+.festas .card-item:hover .xango-text,
+.festas .card-item:hover .ogum-text {
+    color: white;
+}
+
+.festas .card-item:hover .btn {
+    background-color: #694b14;
+}
+
+/* patrimonio cultural */
+.patrimonio .container {
+    display: flex;
+    align-items: center;
+}
+
+.patrimonio .patrimonio-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.patrimonio .patrimonio-text h3 {
+    font-size: 56px;
+}
+
+.patrimonio .patrimonio-text p {
+    margin: 5px 0 10px 0;
+}
+
+.patrimonio .patrimonio-img {
+    width: 50%;
+}
+
+.patrimonio .patrimonio-img img {
+    width: 100%;
+}
+
+/* footer */
+.footer {
+    background-color: #BF3636;
+    text-align: center;
+}
+
+.footer i {
+    color: #BF3636;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer p {
+    margin-top: 10px;
+    color: white;
+}
+
+@media(max-width: 830px) {
+
+    /* menu mobile */
+    .ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(240, 175, 55);
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+    }
+
+    .ul.open {
+        clip-path: circle(141.4% at 100% 0);
+        transition: 0.7s;
+    }
+
+    .ul a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav .close-icon {
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 28px;
+    }
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+header {
+    position: static;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(img/header.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#logo {
+    display: flex;
+    height: 95%;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 1rem;
+}
+
+#logo>img {
+    max-height: 80%;
+    margin-right: 2rem;
+}
+
+#logo>h1 {
+    text-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.nav-bar {
+    display: flex;
+    list-style: none;
+}
+
+.links-nav {
+    text-wrap: nowrap;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    margin: 0.5rem;
+
+}
+
+#btn-languages {
+    background: transparent;
+    height: 5vh;
+    padding-left: 1rem;
+    border: none;
+}
+
+#btn-languages>img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#btn-hamburg {
+    display: none;
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+#btn-hamburg>img {
+    height: 80%;
+}
+
+#languages {
+    position: absolute;
+    top: 10vh;
+    right: 12.5vw;
+    width: 15vw;
+    height: 8vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F28705;
+    list-style: none;
+    font-size: 0.75rem;
+    padding-block: 10px;
+}
+
+#languages>li {
+    width: 100%;
+    height: calc(8vw / 3);
+}
+
+#languages>li>a {
+    width: 100%;
+    justify-content: space-between;
+    text-align-last: center;
+}
+
+@media screen and (max-width: 1080px) {
+    html {
+        font-size: 13px;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    #btn-languages>img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    html {
+        font-size: 10px;
+    }
+
+    #nav-computer {
+        display: none;
+    }
+
+    #btn-hamburg {
+        display: inline;
+    }
+}
