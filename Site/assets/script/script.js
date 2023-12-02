@@ -4,5 +4,6 @@ var menu_mobile = document.getElementById("nav-mobile");
 
 //installing listeners
 button_menu.addEventListener("click",function () {
+    button_menu.classList.toggle('animarBTN')
     if (menu_mobile.style.display === "none" || menu_mobile.style.display === "") {menu_mobile.style.display = "flex"} else {menu_mobile.style.display = "none"};
 });

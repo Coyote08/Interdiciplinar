@@ -39,7 +39,7 @@ p {
     background-color: orangered;
 }
 .banner {
-    display: none;
+    display: flex;
     justify-content: center;
     align-content: center;
     background-image: url(../../img/background_bunner.jpg);
@@ -51,6 +51,8 @@ p {
 }
 
 .banner .banner-text {
+    display: flex;
+    flex-direction: column;
     margin: 150px;
     text-align: center;
     padding: 0 90px;
