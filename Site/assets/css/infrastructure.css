@@ -1,0 +1,24 @@
+/*Configurações Basicas*/
+section {
+    max-width: 100vw;
+    display: flex;
+}
+section:first-child {
+    height: 92vh;
+}
+section:not(:first-child,:last-child) {
+    height: 100vh;
+}
+section:last-child {
+    height: 80vh;
+}
+
+/*Configuração da primeira seção da página (slides)*/
+#slide-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#slides input{
+    display: none;
+}

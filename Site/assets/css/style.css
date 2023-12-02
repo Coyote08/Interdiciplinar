@@ -2,11 +2,13 @@
     font-family: "inter";
     src: url(../fonts/Inter-Regular.ttf) format("truetype");
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    width: 100vw;
 }
 
 /* Configurações do caberçalho e da logo*/
@@ -70,7 +72,7 @@ nav {
 .links-nav::after {
     content: "";
     position: absolute;
-    bottom: 0.4rem;
+    bottom: 0.3rem;
     left: 0;
     width: 0;
     height: 2px;
@@ -127,7 +129,7 @@ button.animarBTN .linhas:nth-child(3) {
 #nav-mobile li {
 
     width: 100%;
-    height: 20%;
+    height: 25%;
 }
 #nav-mobile li a {
     display: flex;
