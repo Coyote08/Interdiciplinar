@@ -126,7 +126,7 @@ button.animarBTN .linhas:nth-child(3) {
 #nav-mobile {
     position: absolute;
     top: 8vh;
-    right: -40vw;
+    right: 0vw;
     display: flex;
     flex-direction: column;
     width: 40vw;
@@ -165,7 +165,6 @@ button.animarBTN .linhas:nth-child(3) {
 
 /*Rodapé*/
 footer {
-    width: 100vw;
     padding: 20px;
     min-height: 20vh;
     background-color: #202020;
