@@ -6,4 +6,5 @@ var menu_mobile = document.getElementById("nav-mobile");
 button_menu.addEventListener("click",function () {
     button_menu.classList.toggle('animarBTN')
     if (menu_mobile.style.display === "none" || menu_mobile.style.display === "") {menu_mobile.style.display = "flex"} else {menu_mobile.style.display = "none"};
+    setTimeout(function() {menu_mobile.classList.toggle('open-menu');},100);
 });
