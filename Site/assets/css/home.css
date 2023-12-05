@@ -146,13 +146,12 @@ p {
 .cards {
     display: flex;
     justify-content: center;
-    display: flex;
     flex-wrap: wrap;
 }
 
 .festas .card-item {
     background-color: #e7c27f;
-    margin: 15px;
+    margin: 5px;
     border-radius: 14px;
     text-align: center;
     transition: 0.3s;
