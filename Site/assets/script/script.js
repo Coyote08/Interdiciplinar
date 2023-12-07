@@ -4,7 +4,7 @@ var menu_mobile = document.getElementById("nav-mobile");
 
 //installing listeners
 button_menu.addEventListener("click",function () {
-    button_menu.classList.toggle('animarBTN')
-    if (menu_mobile.style.display === "none" || menu_mobile.style.display === "") {menu_mobile.style.display = "flex"} else {menu_mobile.style.display = "none"};
+    button_menu.classList.toggle('animarBTN');
+    menu_mobile.classList.toggle('mobile-desable');
     setTimeout(function() {menu_mobile.classList.toggle('open-menu');},100);
 });
