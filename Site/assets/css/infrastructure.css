@@ -1,20 +1,19 @@
 /*Configurações Basicas*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway&family=Roboto:wght@300&display=swap');
+
 main {
     display: flex;
     flex-direction: column;
 }
+
 section {
     width: 100%;
 }
+
 section:first-child {
     height: 92vh;
 }
-section:not(:first-child,:last-child) {
-    height: 100vh;
-}
-section:last-child {
-    height: 80vh;
-}
+
 .btn {
     background-color: orange;
     color: white;
@@ -37,6 +36,7 @@ section:last-child {
     background-repeat: no-repeat;
     position: relative;
 }
+
 #text-welcome {
     position: absolute;
     top: 0;
@@ -52,45 +52,117 @@ section:last-child {
     color: white;
     justify-content: center;
 }
+
 #text-welcome h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 30px;
 }
 
-#location, #life {
+/* segunda section */
+#location {
     display: flex;
-    align-items: center;
-    position: relative;
-    background-image: url(../../img/background.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    padding: 3%;
+    justify-content: center;
+}
+
+#location-img {
+    flex: 3 0 50%;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+#location-img img {
+    object-fit: cover;
+    border-radius: 2%;
+    border: orange solid 5px;
+    width: 85%;
+}
+
+#location-text {
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 400px;
+    text-align: center;
+    margin-inline: 50px;
+    justify-content: center;
 
 }
-#location img, #life img {
-    width: 80%;
-    height: 60%;
-    border-radius: 20%;
-    flex: 1 1 60%;
-    padding: 0 5%;
+
+#location-text h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
 }
-#location-text, #text-life {
-    flex: 1 1 40%;
-    padding: 0 5%;
-}
-#location-text h1, #text-life h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: orange;
-    font-size: 2rem ;
-}
-#location-text p, #text-life p {
+
+#location-text p {
     text-align: justify;
-    margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
 }
-@media only screen and (max-width: 800px) {
-    section {
-        width: 100vw;
+
+/* Terceira section */
+#ecossistema {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    min-height: 60vh;
+    padding: 3%;
+    justify-content: center;
+}
+
+#ecossistema-img {
+    flex: 3 0 50%;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+#ecossistema-img img {
+    object-fit: cover;
+    border-radius: 2%;
+    border: orangered solid 5px;
+    width: 100%;
+    width: 85%;
+}
+
+#text-ecossistema {
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 400px;
+    text-align: center;
+    margin-inline: 50px;
+    justify-content: center;
+
+}
+
+#text-ecossistema h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+
+#text-ecossistema p {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width:970px) {
+    #text-welcome h1 {
+        font-size: 2rem;
+    }
+
+    #text-welcome {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:542px) {
+    #text-welcome h1 {
+        font-size: 1.7rem;
+    }
+
+    #text-welcome {
+        padding: 0;
     }
 }
